@@ -2,7 +2,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 
 public class Day2 {
-
     public static void main(String [] args)  {
 
         String thisLine;
@@ -10,9 +9,7 @@ public class Day2 {
         int distance = 0;
 
 
-        try
-
-        {
+        try {
             BufferedReader br = new BufferedReader(new FileReader("c:/users/lance/documents/AoC21Day2input.txt"));
 
             while ((thisLine = br.readLine()) != null) {
@@ -26,7 +23,7 @@ public class Day2 {
             System.out.println("Final distance " + distance + " Final depth " + depth);
             System.out.println("Answer is " + (distance * depth));
 
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
