@@ -10,7 +10,6 @@ public class Day8 {
             int easydigits = 0;
             while ((thisLine = br.readLine()) != null) {
                 String[] line = thisLine.split("\\|");
-                String[] c1 = line[0].trim().split(" ");
                 String[] c2 = line[1].trim().split(" ");
                 for(int a = 0; a < 4; a ++){
                     int b = c2[a].length();
